@@ -1,0 +1,136 @@
+@import 'colors';
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.flk-alert {
+    position: fixed;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    color: #FFF;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    .alert-content {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        min-width: 30%;
+        opacity: 0;
+        padding: 1rem 2rem;
+        transform: translate(-50%, -50%);
+        animation-name: fadeIn;
+        -webkit-animation-name: fadeIn;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        -webkit-animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+
+        .alert-heading {
+            text-align: left;
+            text-shadow: 0px 0px 2px #000;
+            // background: rgba(244, 64, 52, 0.7);
+            // border: 1px solid red;
+            padding: 1rem;
+            font-weight: bold;
+
+            &.primary {
+                @include primary-theme-hover();
+            }
+
+            &.danger {
+                @include danger-theme-hover();
+            }
+
+            &.success {
+                @include success-theme-hover();
+            }
+        }
+
+        .alert-message {
+            color: #FFF;
+            text-align: left;
+            padding: 2rem 1rem;
+            font-size: 1.6rem;
+            text-shadow: 0px 0px 2px #000;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .input {
+            color: #FFF;
+            width: 100%;
+            border: 1px solid #333;
+            padding: 1rem 0.7rem;
+            background: rgba(0, 0, 0, 0.5);
+            margin-bottom: 2rem;
+        }
+
+        .alert-actions {
+            text-align: right;
+            padding: 1rem;
+            background: rgba(0, 0, 0, 0.6);
+            border: 1px solid #222;
+
+            button {
+                color: #FFF;
+                margin-left: 1rem;
+                padding: 0.5rem 1rem;
+                transition: all 0.3s ease-in-out;
+
+                .icon {
+                    margin-right: 0.3rem;
+                }
+
+                &.alert-close-btn {
+                    @include danger-theme();
+
+                    .icon {
+                        color: rgba(244, 64, 52, 1);
+                    }
+
+                    &:hover,
+                    &:focus,
+                    &:active {
+                        @include danger-theme-hover();
+
+                        .icon {
+                            color: #FFF;
+                        }
+                    }
+                }
+
+                &.alert-confirm-btn {
+                    @include success-theme();
+
+                    .icon {
+                        color: #4bff00;
+                    }
+
+                    &:hover,
+                    &:focus,
+                    &:active {
+                        @include success-theme-hover();
+
+                        .icon {
+                            color: #FFF;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    font-size: 1.2rem;
+}

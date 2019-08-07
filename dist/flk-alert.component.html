@@ -1,0 +1,24 @@
+<div *if="this.display" class="flk-alert">
+    <div class="alert-content">
+        <div class="alert-heading {{ this.headingTheme }}" [html]="this.heading"></div>
+        <div class="alert-message" [html]="this.message"></div>
+        <form-input type="text" *if="this.withInput" (keyup)="if (e.which == 13) this.confirmBtnEl.click();" [placeholder]="this.inputPlaceholder" autofocus [value]="this.inputValue" class="input"></form-input>
+        <div class="alert-actions">
+            <if condition="this.type == 'confirm'">
+                <button type="button" (click)="this.close()" class="alert-close-btn">
+                    <fa icon="times icon"></fa>
+                    <span [html]="this.closeBtn"></span>
+                </button>
+                <button type="button" (click)="this.confirm()" (ready)="this.confirmBtnEl = $el;" [autofocus]="!this.withInput" class="alert-confirm-btn">
+                    <fa icon="check icon"></fa>
+                    <span [html]="this.confirmBtn"></span>
+                </button>
+            </if>
+            <elseif condition="this.type == 'inform'">
+                <button type="button" (click)="this.close()" class="alert-inform-btn">
+                    <span [html]="this.confirmBtn"></span>
+                </button>
+            </elseif>
+        </div>
+    </div>
+</div>

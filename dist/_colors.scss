@@ -1,0 +1,131 @@
+/*   Primary theme   */
+@mixin primary-theme-border() {
+    border: 1px solid #ff7600 !important;
+}
+
+@mixin primary-theme() {
+    background: rgba(0, 0, 0, 0.3) !important;
+    @include primary-theme-border();
+}
+
+@mixin primary-theme-hover() {
+    background: rgba(244, 105, 52, 0.7) !important;
+    @include primary-theme-border();
+}
+/**   Primary theme   */
+
+/*   Pink theme   */
+@mixin pink-theme-border() {
+    border: 1px solid #e91e63 !important;
+}
+
+@mixin pink-theme-background() {
+    background: rgba(233, 30, 99, 0.7) !important;
+}
+
+@mixin pink-theme() {
+    background: rgba(0, 0, 0, 0.3) !important;
+    @include pink-theme-border();
+}
+
+@mixin pink-theme-hover() {
+    @include pink-theme-background();
+    @include pink-theme-border();
+}
+/**   Pink theme   */
+
+/*   Success theme   */
+@mixin success-theme-border() {
+    border: 1px solid #4bff00 !important;
+}
+
+@mixin success-theme-background() {
+    background: rgba(75, 255, 0, 0.4) !important;
+}
+
+@mixin success-theme() {
+    background: rgba(0, 0, 0, 0.3) !important;
+    @include success-theme-border();
+}
+
+@mixin success-theme-hover() {
+    @include success-theme-background();
+    @include success-theme-border();
+}
+/**   Success theme   */
+
+/*   Info theme   */
+@mixin info-theme-border() {
+    border: 1px solid #095aff !important;
+}
+@mixin info-theme-background() {
+    background: rgba(0, 142, 255, 0.4) !important;
+}
+
+@mixin info-theme() {
+    background: rgba(0, 0, 0, 0.3) !important;
+    @include info-theme-border();
+}
+
+@mixin info-theme-hover() {
+    @include info-theme-background();
+    @include info-theme-border();
+}
+/**   Info theme   */
+
+/*   Danger theme   */
+@mixin danger-theme-border() {
+    border: 1px solid red !important;
+}
+@mixin danger-theme-background() {
+    background: rgba(244, 64, 52, 0.6) !important;
+}
+
+@mixin danger-theme() {
+    background: rgba(0, 0, 0, 0.3) !important;
+    @include danger-theme-border();
+}
+
+@mixin danger-theme-hover() {
+    @include danger-theme-background();
+    @include danger-theme-border();
+}
+/**   Danger theme   */
+
+/*   Warning theme   */
+@mixin warning-theme-border() {
+    border: 1px solid orange !important;
+}
+@mixin warning-theme-background() {
+    background: rgba(244, 158, 52, 0.6) !important;
+}
+
+@mixin warning-theme() {
+    background: rgba(0, 0, 0, 0.3) !important;
+    @include warning-theme-border();
+}
+
+@mixin warning-theme-hover() {
+    @include warning-theme-background();
+    @include warning-theme-border();
+}
+/**   Warning theme   */
+
+/*   Skyblue theme   */
+@mixin skyblue-theme-border() {
+    border: 1px solid #2aa3d5 !important;
+}
+@mixin skyblue-theme-background() {
+    background: rgba(52, 182, 244, 0.6) !important;
+}
+
+@mixin skyblue-theme() {
+    background: rgba(0, 0, 0, 0.3) !important;
+    @include skyblue-theme-border();
+}
+
+@mixin skyblue-theme-hover() {
+    @include skyblue-theme-background();
+    @include skyblue-theme-border();
+}
+/**   Warning theme   */
