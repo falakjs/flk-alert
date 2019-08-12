@@ -1,3 +1,6 @@
+
+@import 'node_modules/flk-scss/dist/mixins/responsive';
+
 @import 'colors';
 
 @keyframes fadeIn {
@@ -37,6 +40,15 @@
         animation-fill-mode: both;
         -webkit-animation-duration: 1s;
         -webkit-animation-fill-mode: both;
+
+        @include responsive((
+            0: (
+                width: 100%,
+            ),
+            1024: (
+                width: auto,
+            ),
+        ));
 
         .alert-heading {
             text-align: left;

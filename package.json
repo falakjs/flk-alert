@@ -2,6 +2,9 @@
     "name": "flk-alert",
     "description": "Simple alert mode for Falak JS",
     "version": "0.1.6",
+    "dependencies": {
+        "flk-scss": "1.0.4"
+    },
     "author": {
         "email": "hassanzohdy@gmail.com",
         "name": "Hasan Zohdy"
