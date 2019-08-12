@@ -1,7 +1,7 @@
 {
     "name": "flk-alert",
     "description": "Simple alert mode for Falak JS",
-    "version": "0.1.5",
+    "version": "0.1.6",
     "author": {
         "email": "hassanzohdy@gmail.com",
         "name": "Hasan Zohdy"
