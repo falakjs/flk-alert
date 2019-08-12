@@ -12,7 +12,7 @@ class FlkAlert {
      */
     init() {
         this.display = true;
-        this.inputValue = null;
+        this.inputValue = this.inputs.getOption('value', '');
         this.type = this.inputs.getOption('type', 'confirm');
         this.withInput = this.inputs.getProp('withInput', false);
         this.confirmBtn = this.inputs.getOption('confirmBtn', 'OK');
