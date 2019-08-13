@@ -1,7 +1,7 @@
 {
     "name": "flk-alert",
     "description": "Simple alert mode for Falak JS",
-    "version": "0.1.9",
+    "version": "0.1.10",
     "dependencies": {
         "flk-scss": "^1.0.5"
     },
