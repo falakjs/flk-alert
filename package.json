@@ -5,6 +5,7 @@
     "dependencies": {
         "flk-scss": "1.0.4"
     },
+    "main": "dist/flk-alert.component.js",
     "author": {
         "email": "hassanzohdy@gmail.com",
         "name": "Hasan Zohdy"
